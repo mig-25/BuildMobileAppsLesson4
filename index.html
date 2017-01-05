@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+  <head>
+    <title>StarTrackr</title>
+    <link rel="stylesheet" href="stylesheets/reset.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/screen.css" media="screen">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <script type="text/javascript" src="javascripts/modernizr-2.0.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="javascripts/application.js"></script>
+  </head>
+  <body>
+    <nav id="tab-bar" class="page-spots">
+      <li id="tab-spots">
+        <a href="#page-spots">Spots</a>
+      </li>
+      <li id="tab-sightings">
+        <a href="#page-sightings">Add a sighting</a>
+      </li>
+      <li id="tab-stars">
+        <a href="#page-stars">Stars</a>
+      </li>
+    </nav>
+    <div id="pages">
+      <div id="page-spots">
+        <header>
+          <h1>Spots</h1>
+        </header>
+        <section>
+          <ul id="spots-list" class="table-view table-action">
+          </ul>
+        </section>
+      </div>
+      <div id="page-spot">
+        <header>
+          <a href="#" class="back">Back</a>
+          <h1>Spot</h1>
+        </header>
+        <section></section>
+      </div>
+      <div id="page-sightings">
+        <header>
+          <h1>Sightings</h1>
+        </header>
+        <section></section>
+      </div>
+      <div id="page-stars">
+        <header>
+          <h1>Stars</h1>
+        </header>
+        <section>
+        </section>
+      </div>
+      <div id="page-star">
+        <header>
+          <a href="#" class="back">Back</a>
+          <h1>Spot</h1>
+        </header>
+        <section>
+        </section>
+      </div>
+      <div id="page-gallery">
+        <header>
+          <a href="#" class="back">Back</a>
+          <h1>Gallery</h1>
+        </header>
+        <section>
+          <div id="gallery"></div>
+        </section>
+      </div>
+    </div>
+
+    <div id="about"> 
+      <header>
+        <h1>About Us!</h1> 
+      </header>
+      <section>
+        <dl>
+          <dt>Designer</dt><dd>Max Wheeler</dd>
+          <dt>JavaScript</dt><dd>Earle Castledine</dd>
+          <dt>PhoneGap</dt><dd>Myles Eftos</dd>
+          <dt>Expert Reviewer</dt><dd>Peter-Paul Koch</dd>
+          <dt>Program Directory</dt><dd>Lisa Lang</dd>
+          <dt>Technical Editor</dt><dd>Louis Simoneau</dd>
+          <dt>Indexer</dt><dd>Michele Combs</dd>
+          <dt>Editor</dt><dd>Kelly Steele</dd>
+          <dt>Cover Design</dt><dd>Alex Walker</dd>
+        </dl>
+      </section>
+    </div> 
+
+    <script id="tmpl-spots" type="text/x-jquery-tmpl">
+      <li>
+        <a href="star.html">
+          <h2>${name}</h2>
+          <span class="sightings">${sightings}</span>
+        </a>
+      </li>
+    </script>
+
+    <script id="tmpl-4sq" type="text/x-jquery-tmpl">
+      <li>
+        <a href="spot.html">
+          <h2>${name}</h2>
+          <span class="relative-distance">${location.distance}m away</span>
+          <span class="sightings">${hereNow.count}</span>
+        </a>
+      </li>
+    </script>
+
+    <script id="tmpl-gallery" type="text/x-jquery-tmpl">
+      <div class="gallery-item">
+        <img src="${media.m}" alt="">
+      </div>
+    </script>
+  </body>
+</html>

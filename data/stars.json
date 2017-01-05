@@ -1,0 +1,34 @@
+[
+  {
+    "name":"Catrina Fake",
+    "sightings":5
+  },
+  {
+    "name":"Dan Cederholm",
+    "sightings":5
+  },
+  {
+    "name":"Eric Meyer",
+    "sightings":4
+  },
+  {
+    "name":"Garrett Murray",
+    "sightings":6
+  },
+  {
+    "name":"Jeffery Zeldman",
+    "sightings":2
+  },
+  {
+    "name":"Sophia Teutschler",
+    "sightings":9
+  },
+  {
+    "name":"Tina Roth Eisenberg",
+    "sightings":4
+  },
+  {
+    "name":"Veerle Pieters",
+    "sightings":12
+  }
+]
